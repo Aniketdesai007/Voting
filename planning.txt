@@ -1,0 +1,43 @@
+voting app------------->
+what????
+
+
+
+voting app functionality
+
+1.user signin/signup
+2.list of candidate
+3.vote one of the candidate,after voting ,user can't vote again
+4.live vote count
+5.login using id proof named:aadhar card number
+6.admin who can only maintain the table of candidates and he caan't able to vote at all
+7.user can change password
+8.user can login only with aadhar card number and password
+
+
+-------------------
+
+Routes
+
+user authentication:
+/signup:post-new user
+/login:post-log in to existing account
+
+voting:
+/candidate:get-get list of candidates
+/vote/:candidateid:post-vote for specified candidate
+
+vote count:
+/vote/counts:get-get vote count
+
+user profile:
+/profile:get-get user profile
+/profile/password:put-change password
+
+admin candidate management:
+/candidate:post-create new candidate
+/candidate/:candidateid:put-update candidate
+/candidate/:candidateid:delete-delete candidate
+
+
+
